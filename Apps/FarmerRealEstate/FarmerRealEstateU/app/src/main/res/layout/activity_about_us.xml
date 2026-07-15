@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar_main" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Hero Section -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/about_hero"
+                        android:scaleType="centerCrop" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/splash_gradient"
+                        android:alpha="0.7"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Our Vision"
+                            android:textColor="@color/colorAccentLight"
+                            android:textSize="14sp"
+                            android:letterSpacing="0.2"
+                            android:textAllCaps="true"
+                            android:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Real Estate for Farmers"
+                            android:textColor="@color/white"
+                            android:textSize="32sp"
+                            android:fontFamily="sans-serif-black"
+                            android:textAlignment="center"
+                            android:layout_marginTop="4dp" />
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="4dp"
+                            android:background="@color/colorAccent"
+                            android:layout_marginTop="16dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Content Card -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/CustomCardStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Our Mission"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_marginBottom="16dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Welcome to Real Estate for Farmers – Karnataka\'s premiere farm real estate platform. We are dedicated to simplifying the process of buying, renting, and leasing agricultural land."
+                            android:textColor="@color/textPrimary"
+                            android:textSize="16sp"
+                            android:lineSpacingExtra="6dp"
+                            android:layout_marginBottom="16dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Whether you\'re looking for a specific acreage, a particular soil type, or a strategic location, our platform provides the tools you need to find the perfect plot. We believe that every farmer deserves a transparent and efficient way to grow their legacy."
+                            android:textColor="@color/textPrimary"
+                            android:textSize="16sp"
+                            android:lineSpacingExtra="6dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Contact Card -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/CustomCardStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="32dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get In Touch"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textAllCaps="true"
+                            android:letterSpacing="0.1"
+                            android:layout_marginBottom="12dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="If you\'re selling your rural property or need assistance with a listing, reach out to us at:"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="16dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_baseline_email_24"
+                                app:tint="@color/colorPrimary" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="realestate@farms.com"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginStart="12dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ListView android:id="@+id/navigation_drawer_items_list"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="@color/white"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar_main" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Property Details"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Property Info Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="2dp"
+                    app:strokeColor="@color/divider"
+                    app:strokeWidth="1dp"
+                    android:layout_marginBottom="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="General Information"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:layout_marginBottom="16dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="12dp">
+                            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Property ID" android:textColor="@color/textSecondary" android:textSize="12sp"/>
+                            <TextView android:id="@+id/tvID" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="12dp">
+                            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Category" android:textColor="@color/textSecondary" android:textSize="12sp"/>
+                            <TextView android:id="@+id/tvCategory" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="12dp">
+                            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Type" android:textColor="@color/textSecondary" android:textSize="12sp"/>
+                            <TextView android:id="@+id/tvType" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="12dp">
+                            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Area" android:textColor="@color/textSecondary" android:textSize="12sp"/>
+                            <TextView android:id="@+id/tvArea" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="12dp">
+                            <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="Price" android:textColor="@color/textSecondary" android:textSize="12sp"/>
+                            <TextView android:id="@+id/tvPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/colorAccent" android:textStyle="bold" android:textSize="18sp"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider" android:layout_marginVertical="16dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:layout_marginBottom="12dp"/>
+
+                        <TextView android:id="@+id/tvAddressLine1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="4dp"/>
+                        <TextView android:id="@+id/tvAddressLine2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="4dp"/>
+                        <TextView android:id="@+id/tvCity" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="4dp"/>
+                        <TextView android:id="@+id/tvState" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="16dp"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnViewLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="View on Map"
+                            android:textAllCaps="false"
+                            app:icon="@drawable/ic_address"
+                            app:cornerRadius="12dp"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider" android:layout_marginVertical="16dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Description &amp; Features"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:layout_marginBottom="12dp"/>
+
+                        <TextView android:id="@+id/tvDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="12dp"/>
+                        
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Key Features" android:textColor="@color/textSecondary" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+                        <TextView android:id="@+id/tvFeatures" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="12dp"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remarks" android:textColor="@color/textSecondary" android:textSize="12sp" android:layout_marginBottom="4dp"/>
+                        <TextView android:id="@+id/tvRemarks" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary"/>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Owner Info Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="2dp"
+                    app:strokeColor="@color/divider"
+                    app:strokeWidth="1dp"
+                    android:layout_marginBottom="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Owner Information"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:layout_marginBottom="16dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="16dp">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:src="@drawable/ic_user_profile"
+                                app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                                android:background="@color/surface"
+                                android:padding="8dp"
+                                app:tint="@color/colorPrimary" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginStart="16dp">
+                                <TextView android:id="@+id/tvOwnerName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:textStyle="bold" android:textSize="16sp"/>
+                                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Verified Seller" android:textColor="@color/success" android:textSize="12sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView android:id="@+id/tvOAddressLine1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="4dp"/>
+                        <TextView android:id="@+id/tvOAddressLine2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="4dp"/>
+                        <TextView android:id="@+id/tvOCity" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="4dp"/>
+                        <TextView android:id="@+id/tvOState" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary" android:layout_marginBottom="12dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="8dp">
+                            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_phone" app:tint="@color/textSecondary" android:layout_marginEnd="8dp"/>
+                            <TextView android:id="@+id/tvOMobile" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_baseline_email_24" app:tint="@color/textSecondary" android:layout_marginEnd="8dp"/>
+                            <TextView android:id="@+id/tvOEmailID" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="----" android:textColor="@color/textPrimary"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ListView android:id="@+id/navigation_drawer_items_list"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="@color/white"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

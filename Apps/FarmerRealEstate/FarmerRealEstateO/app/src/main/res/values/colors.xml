@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Palette - Premium Agricultural -->
+    <color name="colorPrimary">#1B4332</color> <!-- Deep Forest Green -->
+    <color name="colorPrimaryDark">#081C15</color>
+    <color name="colorAccent">#D4AF37</color> <!-- Harvest Gold -->
+    <color name="colorAccentLight">#F1D382</color>
+    
+    <!-- Material Basic -->
+    <color name="purple_200">#40916C</color>
+    <color name="purple_500">#1B4332</color>
+    <color name="purple_700">#081C15</color>
+    <color name="teal_200">#D4AF37</color>
+    <color name="teal_700">#B8860B</color>
+    <color name="black">#212529</color>
+    <color name="white">#FFFFFF</color>
+    
+    <!-- Custom Modern Colors -->
+    <color name="surface">#F8F9FA</color>
+    <color name="onSurface">#212529</color>
+    <color name="cardBg">#FFFFFF</color>
+    <color name="textPrimary">#212529</color>
+    <color name="textSecondary">#6C757D</color>
+    <color name="divider">#E9ECEF</color>
+    <color name="success">#2D6A4F</color>
+    <color name="error">#BC4749</color>
+    
+    <!-- Old compatibility -->
+    <color name="green">#1B4332</color>
+    <color name="linecolor">#E9ECEF</color>
+    <color name="mediumgreen">#2D6A4F</color>
+
+    <!-- Gradients -->
+    <color name="gradient_start">#1B4332</color>
+    <color name="gradient_end">#2D6A4F</color>
+</resources>

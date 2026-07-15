@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FarmerRealEstateO</string>
+
+    <string name="navigation_draw_open">open navigation draw</string>
+    <string name="navigation_draw_close">close navigation draw</string>
+
+    <string name="spinner_value">select</string>
+</resources>

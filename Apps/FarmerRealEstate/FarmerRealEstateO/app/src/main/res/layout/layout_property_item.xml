@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:theme="@style/Theme.FarmerRealEstateO"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/divider"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Placeholder Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/surface">
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo"
+                android:alpha="0.2"
+                android:scaleType="centerInside" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:text="STATUS"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/success"
+                app:chipStrokeWidth="0dp"
+                android:textSize="10sp"
+                app:chipMinHeight="24dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category Name"
+                android:textColor="@color/textPrimary"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/tvID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: #----"
+                android:textColor="@color/textSecondary"
+                android:textSize="11sp"
+                android:layout_marginBottom="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginBottom="12dp"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:alignmentMode="alignMargins">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="2dp"
+                    android:text="Edit"
+                    app:icon="@drawable/ic_baseline_account"
+                    app:iconSize="16dp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="11sp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnImages"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="2dp"
+                    android:text="Photos"
+                    app:icon="@drawable/ic_baseline_email_24"
+                    app:iconSize="16dp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="11sp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFeedBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="2dp"
+                    android:text="Feedbk"
+                    app:icon="@drawable/ic_baseline_feedback_24"
+                    app:iconSize="16dp"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="11sp"/>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

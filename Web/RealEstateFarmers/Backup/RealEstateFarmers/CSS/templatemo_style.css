@@ -1,0 +1,132 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-family: 'Courier New';
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    background-image: url('../images/bg.jpg');
+}
+
+
+
+.cleaner {
+	clear: both;
+	width: 100%;
+	height: 1px;
+	font-size: 1px;	
+}
+
+p {
+	text-align: justify;
+	margin: 10px auto;
+	padding: 0px;	
+}
+
+#templatemo_container
+{
+    width: 1000px;
+    margin: 20px auto;
+    border: 1px dashed #000000;
+    -moz-box-shadow: 0px 0px 5px #ccc;
+    -webkit-box-shadow: 0px 0px 5px #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-image: url('../images/templatemo_50p_transprant.png');
+    padding:20px;
+}
+
+.wrapper
+{
+    width: 1000px;
+    height: auto;
+    border: 1px dashed #FFFFCC;
+     background-image: url('../images/bg1.jpg');
+}
+
+.menu
+{
+    width:1000px;
+   
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    border-right:1px dashed white;
+}
+
+/* Change the link color to #111 (black) on hover */
+.menu li a:hover {
+    background-color: #111;
+}
+
+
+.sliderd
+{
+    width:1000px;
+    height:200px;
+    margin:auto;
+}
+
+
+.content
+{
+      width:960px;
+      height:auto;
+      margin:auto;
+      color:White;
+padding:20px;
+ border-top-style: dashed;
+    border-top-width: 1px;
+    border-top-color: #779eca;
+}
+
+.footer
+{
+    width: 1000px;
+    height: 40px;
+    text-align: center;
+    color: #FFFFCC;
+ 
+ padding-top:10px;
+  border-top-style: dashed;
+    border-top-width: 1px;
+    border-top-color: #779eca;
+}
+
+h1
+{
+    font-family: Lucida Handwriting;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFCC;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-bottom-color: #779eca;
+    padding: 10px 0px;
+}
+
+
+.miniimg
+{
+    width:100px;
+    height:100px;
+}

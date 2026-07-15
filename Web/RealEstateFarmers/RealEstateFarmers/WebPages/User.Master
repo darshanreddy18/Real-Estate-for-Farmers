@@ -1,0 +1,62 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="RealEstateFarmers.WebPages.User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Real Estate for Farmers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="Stylesheet" type="text/css" href="../CSS/ModernStyle.css" />
+    <link href="../CSS/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="../CSS/js-image-slider.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div id="templatemo_container">
+        <div class="wrapper">
+            <nav class="menu">
+                <div style="display: flex; align-items: center; color: var(--accent-color); font-weight: 800; font-size: 1.8rem; letter-spacing: 3px; text-transform: uppercase;">
+                    <i class="fas fa-leaf" style="margin-right: 15px;"></i> FARMS
+                </div>
+                <ul>
+                    <li><a href="Index.aspx"><i class="fas fa-home"></i> HOME</a></li>
+                    <li><a href="OurProfile.aspx"><i class="fas fa-user"></i> PROFILE</a></li>
+                    <li><a href="MeetUs.aspx"><i class="fas fa-handshake"></i> MEET US</a></li>
+                    <li><a href="Login.aspx" class="login-btn"><i class="fas fa-sign-in-alt"></i> LOGIN</a></li>
+                </ul>
+            </nav>
+
+            <main class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+
+            <footer class="footer">
+                <div class="footer-logo">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div style="font-size: 1.2rem; font-weight: 600; color: var(--accent-color); margin-bottom: 15px; letter-spacing: 2px; text-transform: uppercase;">
+                    Real Estate for Farmers
+                </div>
+                <p>&copy; <%= DateTime.Now.Year %> Premium Agriculture Solutions. All rights reserved.</p>
+                <div style="margin-top: 30px; display: flex; justify-content: center; gap: 25px; font-size: 1.5rem;">
+                    <a href="#" style="color: var(--text-light);"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: var(--text-light);"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="color: var(--text-light);"><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="color: var(--text-light);"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

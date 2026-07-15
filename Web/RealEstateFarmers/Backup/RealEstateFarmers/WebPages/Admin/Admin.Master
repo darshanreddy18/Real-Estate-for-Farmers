@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="RealEstateFarmers.WebPages.Admin.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Real Estate for Farmers</title>
+
+ 	<link href="../../CSS/templatemo_style.css" rel="stylesheet" type="text/css" />
+     <link rel="Stylesheet" type="text/css" href="../../CSS/Control.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+    <div id="templatemo_container">
+
+    <div class="wrapper">
+    
+    
+    <div class="menu">
+    <ul>
+    <li><a href="AdminBookedPropertiesList.aspx">Bookings</a></li>
+    <li><a href="AdminPropertiesList.aspx">Properties</a></li>
+  <li><a href="AdminOwnersList.aspx">Owners</a></li>
+  <li><a href="AdminUsersList.aspx">Users</a></li>
+  <li><a href="AdminCategoryList.aspx">Category</a></li>
+  <li><a href="../Login.aspx">Logout</a></li>
+</ul>
+    </div>
+
+    <div class="content">
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        </div>
+
+        <div class="cleaner">&nbsp;</div>
+
+
+        <div class="footer">
+        Copy rights Reserved for Students.
+    </div>
+
+    </div>
+
+     </div>
+    </form>
+</body>
+</html>
+
